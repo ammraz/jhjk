@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+/*Общее */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {height: 100%;}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background-color: #f7f7f7;
+    font-size: 1em;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 135%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+/* Header */
+
+header, footer {
+    width: 98%;
+    background-color: white;
+    float: left;
+}
+
+header {
+    border-bottom: 2px solid silver;
+    padding: 1%;
+    padding-bottom: 2% ;
+}
+
+#logo {
+    font-size: 2em;
+    font-family: Comic Sans MS;
+    color: silver;
+}
+
+#logo:hover {
+    
+    color: darkred;
+}
+
+#contact {
+    font-size: 2em ;
+    font-family: Comic Sans MS;
+    margin-left: 20px;
+}
+
+input[type=text].field {
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+input[type=text].field:focus {
+    border: 2px solid darkslategray;
+}
+
+/* Меню */
+
+#menu {
+    color: #666;
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 1.7em;
+}
+
+#menu hr {
+    width: 500px;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#menuHref a {
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: darkslategray;
+}
+
+#menuHref a:hover {background-color: #ececec;}
+
+/* Анонсы для статей */
+
+#wrapper {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+#wrapper #articles {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#wrapper #articles article {
+    float: left;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    min-height: 400px;
+}
+
+@media (min-width: 900px) {
+#wrapper #articles article {
+    width: 31.3%;
+    margin-right: 2%;
+    
+}}
+
+@media (max-width: 899px) and (min-width: 700px) {
+    #wrapper #articles article {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 10px;
+    }}
+
+@media (max-width: 699px) {
+    #wrapper #articles article {
+         width: 100%;
+        margin-bottom: 10px;
+    }}    
+
+#wrapper #articles article img {
+    width: 100%;
+    height: 405px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+#wrapper #articles article h2 {
+    width: 90%;
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 1.7em;
+    color: darkslategray ;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#wrapper #articles article p {
+    width: 80%;
+    margin-left: 10%;
+    text-indent: 1em;
+}
+
+#wrapper #articles article a {
+    padding:  5px;
+    background-color: lightpink ;
+    margin-left: 5%;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    line-height: 15px;
+}
+
+#wrapper #articles article a:hover {
+    background-color: limegreen;
+}
+
+/* страница О НАС */
+
+#about_us {
+    width: 100%;
+    float: left;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    padding: 1%;
+    
+}
+
+/* страница ОБРАТНАЯ СВЯЗЬ */
+
+form {
+    width: 60%;
+    margin-left: 20%;
+    float: left;
+}
+
+form label {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+     border-radius: 5px;
+     border: 2px solid silver;
+     padding: 5px;
+     float: left;
+     clear: both;
+     width: 40%;
+     margin-bottom: 10px;
+}
+
+form textarea {
+    width: 60%;
+    float: left;
+    clear: both;
+    background-color: #fafafa;
+    border: 2px solid silver;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+form input:focus, form textarea:focus {border: 2px solid rgb(253, 74, 74);}
+
+form #send {
+    float: left;
+    padding: 10px;
+    background-color: slategrey;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form #send:hover {background-color: goldenrod;}
+
+
+/* Центральный блок сайта */
+
+#main_soc_block {
+    width: 100%;
+    height: 200px;
+    padding: 2% 0;
+    border-bottom: 2px solid silver ;
+    border-top: 2px solid silver;
+    margin: 20px 0;
+    float: left;
+    background: url(../image/fon2.jpg) repeat-x center;
+}
+
+#main_soc_block_in {
+    text-align: center;
+    font-family: Comic Sans MS, sans-serif;
+    padding: 1%;
+    color: white;
+    height: 200px;
+    width: 500px;
+    background-color: darkslategrey ;
+    border: 3px solid black;
+    box-sizing: border-box;
+    border-radius: 7px;
+    max-width: 98%;
+}
+
+#main_soc_block_in a {
+    float: left;
+    padding: 5px 160px;
+    color: maroon;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#main_soc_block_in a:hover {
+    background-color: lightslategray;
+}
+
+
+/* Footer */
+
+footer {
+    border-top: 2px solid silver;
+    margin-top: 10px;
+    padding: 1%;
+}
+
+footer img { float: left; margin-right: 10px; }
+
+#page-wrap::after {
+    content: "";
+    display: block;
+}
+
+#page-wrap {
+    min-height: 90%;
+    margin-bottom: -10px;
+}
+
+footer, #page-wrap::after {height: 10px;}
+
+/*Ссылки */
+a {
+    color: darkslategray;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+a:hover {
+    color: darkred;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+a:active {
+    color: lightseagreen;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+.right {float: right;padding: 5px;}
+.left {float: left; padding: 5px;}
+.clear {clear: both;}
+
+
+
+/*Selection Block */
+
+::selection {background: darkslategray; color: white;}
+::-moz-selection {background: darkslategray; color: white;}
